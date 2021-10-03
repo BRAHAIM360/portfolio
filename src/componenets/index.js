@@ -3,14 +3,15 @@ import React, { useState } from "react";
 import useScrollPosition from "@react-hook/window-scroll";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
-import { Document, Page } from 'react-pdf';
 
 function Landing() {
   const [menu, setMenu] = useState(false);
   const scrollY = useScrollPosition(60);
   const { t, i18n } = useTranslation();
   document.body.dir = i18n.dir();
-  console.log(i18n.dir() === "rtl");
+  function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+   }
 
   return (
     <div>
@@ -145,7 +146,15 @@ function Landing() {
             </div>
             <div className="column right">
               <div className="text">
-                {t("am")} <span className="typing-2"></span>
+                {t("am")}{" "}
+                <span className="typing-2">
+                  <Typed
+                    strings={[t("Developer"), t("Designer"), t("Freelancer")]}
+                    typeSpeed={100}
+                    backSpeed={60}
+                    loop
+                  />
+                </span>
               </div>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
@@ -157,7 +166,7 @@ function Landing() {
                 beatae. Dolor iste excepturi ratione soluta quas culpa
                 voluptatum repudiandae harum non.
               </p>
-            
+
               <a href="./cv/cv.pdf"> {t("Download CV")}</a>
             </div>
           </div>
@@ -168,7 +177,7 @@ function Landing() {
         <div className="max-width">
           <h2 className="title">{t("My services")}</h2>
           <div className="serv-content">
-            <div className="card">
+            <div className="card" onClick={()=>{ openInNewTab("https://food-delivery.mahioussi.com/") }}>
               <div className="box">
                 <i className="fas fa-paint-brush"></i>
                 <div className="text">{t("Web Design")}</div>
@@ -178,7 +187,7 @@ function Landing() {
                 </p>
               </div>
             </div>
-            <div className="card">
+            <div className="card" onClick={()=>{ openInNewTab("https://animated-payement-visa.mahioussi.com/")} }>
               <div className="box">
                 <i className="fas fa-laptop "></i>
                 <div className="text">{t("Web Dev")}</div>
@@ -322,14 +331,20 @@ function Landing() {
               </p>
               <div className="icons">
                 <div className="row">
-                  <i className="fas fa-user"  style={i18n.dir() === "rtl" ? { marginLeft: "20px" }:{}}></i>
+                  <i
+                    className="fas fa-user"
+                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
+                  ></i>
                   <div className="info">
                     <div className="head">{t("Name")} </div>
                     <div className="sub-title">{t("Mahioussi Brahim")} </div>
                   </div>
                 </div>
                 <div className="row">
-                  <i className="fas fa-map-marker-alt"  style={i18n.dir() === "rtl" ? { marginLeft: "20px" }:{}}></i>
+                  <i
+                    className="fas fa-map-marker-alt"
+                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
+                  ></i>
                   <div className="info">
                     <div className="head"> {t("Address")}</div>
                     <div className="sub-title">
@@ -338,10 +353,10 @@ function Landing() {
                     </div>
                   </div>
                 </div>
-                <div className="row"   >
+                <div className="row">
                   <i
                     className="fas fa-envelope"
-                    style={i18n.dir() === "rtl"  ? { marginLeft: "20px" } :{}}
+                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
                   ></i>
                   <div className="info">
                     <div className="head"> {t("Email")}</div>
