@@ -1,0 +1,62 @@
+
+.portfolio .box-container .box{
+    
+    flex:1 1 22rem;
+    height:25rem;
+    position: relative;
+    overflow:hidden;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background:#fff;
+    border-radius: .5rem;
+    width:100%;
+  overflow:hidden;
+    
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+
+.portfolio .box-container .box:hover img{
+    height:75%;
+    width:75%;
+    transition: .3s ease-in-out;
+}
+.portfolio .box-container .box h3{
+    position: absolute;
+    bottom:.5rem; left:1rem;
+    font-size: 2.5rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.portfolio .box-container .box .icons{
+    position: absolute;
+    top:1rem; right:1rem;
+}
+
+.portfolio .box-container .box .icons a{
+    display: block;
+    height:4rem;
+    width:4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:#333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover{
+    background:var(--main-color);
+    color:crimson;
+    background-color: #111;
+}

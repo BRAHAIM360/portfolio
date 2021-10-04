@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import useScrollPosition from "@react-hook/window-scroll";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
+import Projects from "./projects.js";
 
 function Landing() {
   const [menu, setMenu] = useState(false);
@@ -92,6 +93,19 @@ function Landing() {
                 {t("Skills")}
               </a>
             </li>
+            <li>
+              <a
+                href="#teams"
+                className="menu-btn"
+                onClick={() => {
+                  setMenu(!menu);
+                }}
+              >
+                {t("Projects")}
+              </a>
+            </li>
+         
+          
             <li>
               <a
                 href="#contact"
@@ -277,44 +291,9 @@ function Landing() {
       {/* <!-- teams section start --> */}
       <section className="teams" id="teams">
         <div className="max-width">
-          <h2 className="title">{t("Projects")}</h2>
-          <div className="carousel owl-carousel">
-            <div className="card">
-              <div className="box">
-                <img src="images/profile-1.jpeg" alt="" />
-                <div className="text">Someone name</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="box">
-                <img src="images/profile-2.jpeg" alt="" />
-                <div className="text">Someone name</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="box">
-                <img src="images/profile-3.jpeg" alt="" />
-                <div className="text">Someone name</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="box">
-                <img src="images/profile-4.jpeg" alt="" />
-                <div className="text">Someone name</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div className="card">
-              <div className="box">
-                <img src="images/profile-5.jpeg" alt="" />
-                <div className="text">Someone name</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
+          <h2 className="title">{t("Projects")}</h2>          
+           <Projects/>
+         
         </div>
       </section>
       {/* <!-- contact section start --> */}
