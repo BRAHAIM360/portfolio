@@ -171,7 +171,7 @@ function Landing() {
                 </span>
               </div>
               <p>
-                {t("who i am")}
+              {t("what i know")}
               </p>
 
               <a href="./cv/cv.pdf"> {t("Download CV")}</a>

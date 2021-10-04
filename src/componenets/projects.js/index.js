@@ -13,44 +13,21 @@ const project = [
       id: "1",
       title: "Food Delivery",
       link: "",
-      img: "images/img-2.jpg",
+      img: "images/img4.jpg",
     },
     {
       id: "1",
       title: "Food Delivery",
       link: "",
-      img: "images/imge2.jpg",
+      img: "images/img5.jpg",
     },
     {
       id: "1",
       title: "Food Delivery",
       link: "",
-      img: "images/img-4.jpg",
+      img: "images/img6.jpg",
     },
-    {
-      id: "1",
-      title: "Food Delivery",
-      link: "",
-      img: "images/img-5.jpg",
-    },
-    {
-      id: "1",
-      title: "Food Delivery",
-      link: "",
-      img: "images/img-6.jpg",
-    },
-    {
-      id: "1",
-      title: "Food Delivery",
-      link: "",
-      img: "images/img-2.jpg",
-    },
-    {
-      id: "1",
-      title: "Food Delivery",
-      link: "",
-      img: "images/img-1.jpg",
-    },
+ 
   ];
 
 function Projects() {
