@@ -4,6 +4,7 @@ import useScrollPosition from "@react-hook/window-scroll";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
 import Projects from "./projects.js";
+import Footer from "./footer";
 
 function Landing() {
   const [menu, setMenu] = useState(false);
@@ -292,9 +293,7 @@ function Landing() {
             <div className="column left">
               <div className="text">{t("Get in Touch")}</div>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
-                nesciunt veritatis vitae nobis?
+              {t("contactMe")}
               </p>
               <div className="icons">
                 <div className="row">
@@ -363,16 +362,7 @@ function Landing() {
         </div>
       </section>
       {/* <!-- footer section start --> */}
-      <footer>
-        <span>
-          {t("Created By")}
-          <a href="https://www.mahioussi.com">
-            {" "}
-            {t("Mahioussi Brahim")}
-          </a> | <span className="far fa-copyright"></span>{" "}
-          {t("2021 All rights")}
-        </span>
-      </footer>
+            <Footer/>
     </div>
   );
 }

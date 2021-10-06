@@ -110,7 +110,7 @@ section .title::after{
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    color: crimson;
+    color: rgb(34, 20, 20);
 }
 
  .navbar  :hover {
@@ -561,20 +561,7 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
-footer{
-    background: #111;
-    padding: 15px 23px;
-    color: #fff;
-    text-align: center;
-}
-footer span a{
-    color: crimson;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+
 
 
 /* responsive media query start */
