@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 
 
-ReactGA.initialize("289157919")
+ReactGA.initialize("G-X28P09E27C")
 
 
 function App() {
