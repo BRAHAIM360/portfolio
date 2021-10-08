@@ -1,21 +1,30 @@
 import "./style.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useScrollPosition from "@react-hook/window-scroll";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
 import Projects from "./projects.js";
 import Footer from "./footer";
+import Contact from "./contact";
+import SelectLang from "./selectLang";
+import {  useSelector } from "react-redux";
 
 function Landing() {
   const [menu, setMenu] = useState(false);
+  
   const scrollY = useScrollPosition(60);
   const { t, i18n } = useTranslation();
+  const lang = useSelector(state => state.lang.value);
   document.body.dir = i18n.dir();
   function openInNewTab(url) {
     window.open(url, '_blank').focus();
    }
-
+   
+  useEffect(()=>{
+    i18n.changeLanguage(lang);
+  },[lang])
   return (
+    
     <div>
       <div
         className={scrollY < 500 ? "scroll-up-btn" : "scroll-up-btn show"}
@@ -33,15 +42,17 @@ function Landing() {
           <div className="logo">
             <div
               className="lang"
-              style={
-                i18n.dir() === "ltr"
-                  ? { marginRight: "30px" }
-                  : { marginLeft: "30px" }
-              }
+  
             >
-              <i class="fa fa-globe" aria-hidden="true"></i>
-              <div className="text">{i18n.language}</div>
+              <i style={
+                i18n.dir() === "ltr"
+                  ? { marginRight: "10px" }
+                  : { marginLeft: "10px" }
+              } className="fa fa-globe" aria-hidden="true"></i>
+              
+              <div className="text"><SelectLang/></div>
             </div>
+          
 
             <div className="logo">
               <a href="#">
@@ -215,6 +226,7 @@ function Landing() {
                 </p>
               </div>
             </div>
+            
           </div>
         </div>
       </section>
@@ -261,7 +273,7 @@ function Landing() {
               </div>
               <div className="bars">
                 <div className="info">
-                  <span>MySql</span>
+                  <span>C#</span>
                   <span>70%</span>
                 </div>
                 <div className="line mysql"></div>
@@ -286,81 +298,7 @@ function Landing() {
         </div>
       </section>
       {/* <!-- contact section start --> */}
-      <section className="contact" id="contact">
-        <div className="max-width">
-          <h2 className="title">{t("Contact me")}</h2>
-          <div className="contact-content">
-            <div className="column left">
-              <div className="text">{t("Get in Touch")}</div>
-              <p>
-              {t("contactMe")}
-              </p>
-              <div className="icons">
-                <div className="row">
-                  <i
-                    className="fas fa-user"
-                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
-                  ></i>
-                  <div className="info">
-                    <div className="head">{t("Name")} </div>
-                    <div className="sub-title">{t("Mahioussi Brahim")} </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <i
-                    className="fas fa-map-marker-alt"
-                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
-                  ></i>
-                  <div className="info">
-                    <div className="head"> {t("Address")}</div>
-                    <div className="sub-title">
-                      {" "}
-                      {t("Rue Benhalfya Lakhder port 57 Benfreha ,Oran")}
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <i
-                    className="fas fa-envelope"
-                    style={i18n.dir() === "rtl" ? { marginLeft: "20px" } : {}}
-                  ></i>
-                  <div className="info">
-                    <div className="head"> {t("Email")}</div>
-                    <div className="sub-title">contact@mahioussi.com</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="column right">
-              <div className="text">{t("Message me")}</div>
-              <form action="#">
-                <div className="fields">
-                  <div className="field name">
-                    <input type="text" placeholder="Name" required />
-                  </div>
-                  <div className="field email">
-                    <input type="email" placeholder="Email" required />
-                  </div>
-                </div>
-                <div className="field">
-                  <input type="text" placeholder="Subject" required />
-                </div>
-                <div className="field textarea">
-                  <textarea
-                    cols="30"
-                    rows="10"
-                    placeholder="Message.."
-                    required
-                  ></textarea>
-                </div>
-                <div className="button-area">
-                  <button type="submit"> {t("Send message")}</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+    <Contact/>
       {/* <!-- footer section start --> */}
             <Footer/>
     </div>

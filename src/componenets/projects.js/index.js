@@ -55,6 +55,7 @@ function Projects() {
         {project.map((project) => {
           return (
             <Project
+              key={project.id}
               id={project.id}
               img={project.img}
               title={project.title}

@@ -6,13 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 import "./i18n";
 import Sppiner from "./componenets/fullPageReaload";
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from "react-redux";
+import { store } from "./Redux/Store";
 
 ReactDOM.render(
   <React.StrictMode>
 
   <BrowserRouter>
     <Suspense fallback={<Sppiner />}>
+    <Provider store={store}>
       <App />
+      </Provider>
     </Suspense>
     </BrowserRouter>
   </React.StrictMode>,

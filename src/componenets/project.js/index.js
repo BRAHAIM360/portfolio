@@ -3,10 +3,10 @@ import "./style.css";
 
 function Project({ id, img, title, link,git }) {
   return (
-    <div class="box" key={id}>
+    <div className="box" key={id}>
       <img src={img} alt="" />
       <h3> {title} </h3>
-      <div class="icons">
+      <div className="icons">
         <a href={link} className="fas fa-link"></a>
         <a href={git} className="fab  fa-github"></a>
         <a href="#" className="fas fa-search"></a>

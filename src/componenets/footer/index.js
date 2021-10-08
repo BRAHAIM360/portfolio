@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import "./style.css";
 function Footer() {
-    const { t, i18n } = useTranslation();
+    const { t} = useTranslation();
     
    function openInNewTab(url) {
     window.open(url, '_blank').focus();
