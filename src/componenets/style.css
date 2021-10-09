@@ -109,6 +109,7 @@ section .title::after{
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
     color: rgb(34, 20, 20);
 }
 
@@ -234,8 +235,17 @@ section .title::after{
 }
 
 /* about section styling */
-.about .title::after{
-    content: "who i am";
+.about #en::after{
+    content: "Who i am";
+}
+.about  #ar::after{
+    content: "من أكون ";
+}
+.about  #fr::after{
+    content: "Qui suis-je ";
+}
+.about #de::after{
+    content: "Wer bin Ich";
 }
 .about .about-content .left{
     width: 45%;
@@ -283,14 +293,30 @@ section .title::after{
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.services .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.services #en::after{
     background: #111;
-    content: "what i provide";
+    content: "What  i provide";
 }
+
+.services #fr::after{
+    background: #111;
+    content: "Ce que je fournis";
+}
+
+.services #ar::after{
+    background: #111;
+    content: "ما أقوم بتقديمه ";
+}
+
+.services #de::after{
+    background: #111;
+    content: "Was ich anbiete ";
+}
+
 
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -325,10 +351,20 @@ section .title::after{
 }
 
 /* skills section styling */
-
-.skills .title::after{
+.skills .title::after,
+.skills #en ::after{
     content: "what i know";
 }
+.skills #fr ::after{
+    content: "Ce que je sais";
+}
+.skills #ar ::after{
+    content: "ما اعرفه ";
+}
+.skills #de ::after{
+    content: "Was ich weiß";
+}
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -401,7 +437,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "My Projects";
+    content: "Project i have been working on ";
 }
 .teams .carousel .card{
     background: #222;
@@ -501,7 +537,6 @@ section .title::after{
     .menu-btn{
         display: block;
         z-index: 999;
-        margin-left: 10px;
     }
     .menu-btn i.active:before{
         content: "\f00d";

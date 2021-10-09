@@ -33,14 +33,29 @@
   font-size: 2rem;
   color: #333;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.6;
 }
 
 .portfolio .box-container .box .icons {
   position: absolute;
   top: 1rem;
+ 
+}
+
+.portfolio .box-container .box .right{
   right: 1rem;
 }
+.portfolio .box-container .box .left{
+  left: 1rem;
+}
+/* .icons .right{
+ left: 1rem;
+}
+.portfolio .box-container .box .icons .left{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+} */
 
 .portfolio .box-container .box .icons a {
   display: block;

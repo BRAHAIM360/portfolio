@@ -2,11 +2,12 @@ import React from "react";
 import "./style.css";
 
 function Project({ id, img, title, link,git }) {
+ 
   return (
     <div className="box" key={id}>
       <img src={img} alt="" />
       <h3> {title} </h3>
-      <div className="icons">
+      <div className={document.body.dir ==='rtl' ? "icons left":"icons right "}>
         <a href={link} className="fas fa-link"></a>
         <a href={git} className="fab  fa-github"></a>
         <a href="#" className="fas fa-search"></a>

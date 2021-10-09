@@ -42,7 +42,7 @@ function Landing() {
           <div className="logo">
             <div
               className="lang"
-  
+              
             >
               <i style={
                 i18n.dir() === "ltr"
@@ -165,7 +165,7 @@ function Landing() {
       {/* <!-- about section start --> */}
       <section className="about" id="about">
         <div className="max-width">
-          <h2 className="title">{t("About")}</h2>
+          <h2 className="title " id={lang} >{t("About")}</h2>
           <div className="about-content">
             <div className="column left">
               <img src="images/profile-1.jpeg" alt="" />
@@ -194,7 +194,7 @@ function Landing() {
       {/* <!-- services section start --> */}
       <section className="services" id="services">
         <div className="max-width">
-          <h2 className="title">{t("My services")}</h2>
+          <h2 className="title"id={lang}>{t("My services")}</h2>
           <div className="serv-content">
             <div className="card" onClick={()=>{ openInNewTab("https://food-delivery.mahioussi.com/") }}>
               <div className="box">
@@ -233,7 +233,7 @@ function Landing() {
       {/* <!-- skills section start --> */}
       <section className="skills" id="skills">
         <div className="max-width">
-          <h2 className="title">{t("My skills")}</h2>
+          <h2 className="title"id={lang}>{t("My skills")}</h2>
           <div className="skills-content">
             <div className="column left">
               <div className="text">{t("My creative skills")}</div>
@@ -292,7 +292,7 @@ function Landing() {
       {/* <!-- teams section start --> */}
       <section className="teams" id="teams">
         <div className="max-width">
-          <h2 className="title">{t("Projects")}</h2>          
+          <h2 className="title"id={lang}>{t("Projects")}</h2>          
            <Projects/>
          
         </div>
