@@ -295,6 +295,7 @@ section .title::after{
 .services .title::before,
 .services .title::before{
     background: #fff;
+   
 }
 .services .title::after,
 .services #en::after{
@@ -350,18 +351,19 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+
 /* skills section styling */
 .skills .title::after,
-.skills #en ::after{
+.skills #en::after{
     content: "what i know";
 }
-.skills #fr ::after{
+.skills #fr::after{
     content: "Ce que je sais";
 }
-.skills #ar ::after{
+.skills #ar::after{
     content: "ما اعرفه ";
 }
-.skills #de ::after{
+.skills #de::after{
     content: "Was ich weiß";
 }
 
@@ -436,9 +438,37 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "Project i have been working on ";
+.services, .teams{
+    color:#fff;
+    background: #111;
 }
+.teams .title::before,
+.teams .title::before{
+    background: #fff;
+    width: 35%;
+}
+.teams.title::after,
+.teams #en::after{
+    background: #111;
+    content: "Projects i have been working on";
+}
+
+.teams #fr::after{
+    background: #111;
+    content: "Projets sur lesquels j'ai travaillé ";
+}
+
+.teams #ar::after{
+    background: #111;
+    content: "المشاريع التي كنت أعمل عليها";
+}
+
+.teams #de::after{
+    background: #111;
+    content: "Projekte an denen ich gearbeitet habe";
+}*/
+
+/* teams section styling */
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;

@@ -1,9 +1,24 @@
 
 /* contact section styling */
 
-.contact .title::after{
-    content: "get in touch";
+.contact .title::after,
+.contact #en::after{
+    content: "Get in touch ";
 }
+
+.contact #fr::after{
+    content: "Entrer en contact";
+}
+
+.contact #ar::after{
+    content: "تواصل معي";
+}
+
+.contact #de::after{
+    content: "In Kontakt kommen ";
+}
+
+
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }

@@ -298,7 +298,7 @@ function Landing() {
         </div>
       </section>
       {/* <!-- contact section start --> */}
-    <Contact/>
+    <Contact lang={lang}/>
       {/* <!-- footer section start --> */}
             <Footer/>
     </div>
