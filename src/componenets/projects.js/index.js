@@ -6,7 +6,7 @@ const project = [
   {
     id: "1",
     title: "Food Delivery",
-    link: "https://food-delivery.mahioussi.com/",
+    link: "https://food.mahioussi.com/",
     img: "images/img4.jpg",
     git:"https://github.com/BRAHAIM360"
   },
