@@ -1,16 +1,15 @@
 import React from "react";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { changeLang } from "../../Redux/features/langSlice";
 import "./style.css";
 function SelectLang() {
   const [active, setActive] = useState(false);
-  const [selectLang, setSelectLang] = useState("en");
   const dispatch = useDispatch();
-
+  const selectLang = useSelector(state => state.lang.value);
   const updateLang = (lng) => {
     dispatch(changeLang(lng));
-    setSelectLang(lng);
     setActive(false);
   };
 
