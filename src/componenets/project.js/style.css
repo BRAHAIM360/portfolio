@@ -75,7 +75,20 @@
   color: crimson;
   background-color: #111;
 }
+@media (max-width: 500px) { 
 
-@media (max-width: 947px) {
- 
+  .portfolio .box-container .box h3 {
+    
+    font-size: 2rem;
+   
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .portfolio .box-container .box:hover img {
+    height: 70%;
+    width: 70%;
+   
+  }
+  
 }
