@@ -4,7 +4,7 @@ import Landing from './componenets';
 import ReactGA from 'react-ga' ;
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-
+import ProjectDesc from './pages/project';
 
 ReactGA.initialize("G-X28P09E27C")
 
@@ -15,11 +15,10 @@ useEffect(()=>{
 })
   return (
 
-      <div>
-       
-         <Landing/>
-      </div>
-    
+    <div>
+    <ProjectDesc/>
+      {/* <Landing/> */}
+   </div>
   
   );
 }
