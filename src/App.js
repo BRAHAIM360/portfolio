@@ -1,6 +1,6 @@
 
 import './App.css';
-import Landing from './componenets';
+import Landing from './pages/home';
 import ReactGA from 'react-ga' ;
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';

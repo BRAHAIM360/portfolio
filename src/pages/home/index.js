@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 import useScrollPosition from "@react-hook/window-scroll";
 import { useTranslation } from "react-i18next";
 import Typed from "react-typed";
-import Projects from "./projects.js";
-import Footer from "./footer";
-import Contact from "./contact";
-import SelectLang from "./selectLang";
+import SelectLang from "../../componenets/selectLang";
 import {  useSelector } from "react-redux";
+import Projects from "../../componenets/projects.js";
+import Footer from "../../componenets/footer";
+import Contact from "../../componenets/contact";
 
 function Landing() {
   const [menu, setMenu] = useState(false);

@@ -1,13 +1,13 @@
-:root {
+/* :root { 
   /* Set fade in duration */
-  --fade-time: 0.5s;
+  /* --fade-time: 0.5s;
 }
 
 body {
   margin: 20px;
   padding: 0;
   background: #333;
-}
+} */
 
 .container {
   max-width: 760px;
