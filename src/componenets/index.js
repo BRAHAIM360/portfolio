@@ -196,7 +196,7 @@ function Landing() {
         <div className="max-width">
           <h2 className="title"id={lang}>{t("My services")}</h2>
           <div className="serv-content">
-            <div className="card" onClick={()=>{ openInNewTab("https://food-delivery.mahioussi.com/") }}>
+            <div className="card" >
               <div className="box">
                 <i className="fas fa-paint-brush"></i>
                 <div className="text">{t("Web Design")}</div>

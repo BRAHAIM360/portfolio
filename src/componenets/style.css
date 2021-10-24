@@ -645,32 +645,6 @@ section .title::after{
         width: 100%;
     }
 }
-.teams .title::before{
-    background: #fff;
-    width: 100%;
-    top: 4rem;
-}
-.teams .title::after{
-    top: 4rem;
-    width: 70%;
-}
-
-.contact .title::before{
-    background: #000000;
-    width: 100%;
-}
-.contact .title::after{
-    top: 3rem;
-   
-}
-.services .title::before{
-    background: #fff;
-    width: 110%;
-}
-.services .title::after{
-    top: 3rem;
-    width: 60%;
-}
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -700,5 +674,32 @@ section .title::after{
         font-size: 23px;
         line-height: 38px;
     }
+    
+.teams .title::before{
+    background: #fff;
+    width: 100%;
+    top: 4rem;
+}
+.teams .title::after{
+    top: 4rem;
+    width: 90%;
+}
+
+.contact .title::before{
+    background: #000000;
+    width: 90%;
+}
+.contact .title::after{
+    top: 3rem;
+   
+}
+.services .title::before{
+    background: #fff;
+    width: 90%;
+}
+.services .title::after{
+    top: 3rem;
+    width: 60%;
+}
 }
 
