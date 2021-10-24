@@ -16,8 +16,8 @@ useEffect(()=>{
   return (
 
     <div>
-    <ProjectDesc/>
-      {/* <Landing/> */}
+    {/* <ProjectDesc/> */}
+      <Landing/>
    </div>
   
   );
