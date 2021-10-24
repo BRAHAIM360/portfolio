@@ -17,26 +17,28 @@
     content: '';
     display: inline-block;
     width: 38px;
-    height: 38px;
+    height: 30px;
    
     background-size: contain;
     background-repeat: no-repeat;
     
 }
 .en::before{
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-image: url("./flags/us.svg");
+    
 }
 .ar::before{
-    background-image: url(https://www.countryflags.io/dz/flat/32.png);
+    background-image: url("./flags/dz.svg");
 }
 .fr::before{
-    background-image: url(https://www.countryflags.io/fr/flat/32.png);
+    background-image: url("./flags/fr.svg");
 }
 
 .de::before{
-    background-image: url(https://www.countryflags.io/de/flat/32.png);
-}
+    background-image: url("./flags/de.svg");
+    /* background-image: url(https://www.countryflags.io/de/flat/32.png); */
 
+}
 .lang-menu ul {
     margin: 0;
     padding: 0;
@@ -81,20 +83,6 @@
     background-repeat: no-repeat;
 }
 
-.de:before {
-    background-image: url(https://www.countryflags.io/de/flat/32.png);
-}
-
-.en:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
-}
-.fr:before {
-    background-image: url(https://www.countryflags.io/fr/flat/32.png);
-}
-
-.ar:before {
-    background-image: url(https://www.countryflags.io/dz/flat/32.png);
-}
 
 
 .lang-menu:hover ul  {
