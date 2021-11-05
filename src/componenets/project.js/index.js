@@ -10,7 +10,7 @@ function Project({ id, img, title, link,git }) {
       <div className={document.body.dir ==='rtl' ? "icons left":"icons right "}>
         <a href={link} className="fas fa-link"></a>
         <a href={git} className="fab  fa-github"></a>
-        <a href="/project" className="fas fa-search"></a>
+        <a href={`/project/${id}`} className="fas fa-search"></a>
       </div>
     </div>
   );

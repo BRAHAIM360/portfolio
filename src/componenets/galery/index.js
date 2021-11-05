@@ -1,14 +1,10 @@
 import React, { useRef, useState } from "react";
+import { ProjectsData } from "../../data";
 import "./style.css";
-const images = [
-  { id: "0", img: "https://preview.ibb.co/gxVppG/bSWjOb/img7.jpg" },
-  { id: "1", img: "https://preview.ibb.co/goKtGw/img6.jpg" },
-  { id: "3", img: "https://preview.ibb.co/bSWjOb/img7.jpg" },
-  { id: "2", img: "https://preview.ibb.co/goKtGw/img6.jpg" },
-  { id: "3", img: "https://preview.ibb.co/bSWjOb/img7.jpg" },
-];
 
 function Galery() {
+  const projectId =window.location.pathname.substr(9)
+  const images = ProjectsData[projectId].images
   const galleryImg = useRef(null);
   const FirstImg = useRef(null);
   const [sref, setSref] = useState(null);
@@ -38,7 +34,7 @@ function Galery() {
           ref={galleryImg}
           src={images[0].img}
           id="current"
-          className={setSelected ? "fade-in" : ""}
+          className={selected ? "fade-in" : ""}
         />
       </div>
       <div class="imgs">

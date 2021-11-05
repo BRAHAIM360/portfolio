@@ -45,7 +45,7 @@ function NavBar() {
             </div>
 
             <div className="logo">
-              <a href="#">
+              <a href="/">
                 Mahiou<span>ssi</span>
               </a>
             </div>

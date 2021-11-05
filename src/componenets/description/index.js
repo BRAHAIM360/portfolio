@@ -1,24 +1,28 @@
 import React from "react";
-import ReactTyped from "react-typed";
 import Galery from "../galery";
 import "./style.css";
+import {ProjectsData} from '../../data'
+import { useTranslation } from "react-i18next";
 
 function Description() {
+  const projectId =window.location.pathname.substr(9)
+  const { t} = useTranslation();
+  
   return (
     <div className="desc">
       <div className="max-width">
         <div className="content">
           <div id="left">
-            <Galery />
+            <Galery images={ProjectsData[projectId].images} />
           </div>
           <div id="right">
-            <h3>FooD Delivery</h3>
+            <h3>{ProjectsData[projectId].title} </h3>
             <div className="tools">
-              <div>C#</div>
-              <div>javaScript</div>
-              <div>css</div>
-              <div>html</div>
+             {ProjectsData[projectId].tags.map(tag=>(<div>{tag}</div>))}
             </div>
+            <p>
+             {t(ProjectsData[projectId].desc)}
+            </p>
           </div>
         </div>
       </div>

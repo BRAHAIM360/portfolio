@@ -16,12 +16,18 @@ body {
   background: #fff;
 }
 
+.main-img img{
+  height: 340px;
+  cursor: pointer;
+}
 .main-img img,
 .imgs img {
+  
   width: 100%;
 }
 
 .imgs {
+  object-fit: cover;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -30,6 +36,8 @@ body {
 
 .imgs img {
   cursor: pointer;
+  height: 80px;
+  width: 120px;
 }
 
 /* Fade in animation */
@@ -48,6 +56,11 @@ body {
 @media(max-width: 600px) {
   .imgs {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .imgs img {
+    cursor: pointer;
+    width: 100%;
+
   }
   
 }
