@@ -53,7 +53,7 @@ function NavBar() {
           <ul className={menu ? "menu active" : "menu "}>
             <li>
               <a
-                href="#home"
+                href="/#home"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
@@ -64,7 +64,7 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#about"
+                href="/#about"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
@@ -75,7 +75,7 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#services"
+                href="/#services"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
@@ -86,7 +86,7 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#skills"
+                href="/#skills"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
@@ -97,7 +97,7 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#teams"
+                href="/#teams"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
@@ -109,7 +109,7 @@ function NavBar() {
 
             <li>
               <a
-                href="#contact"
+                href="/#contact"
                 className="menu-btn"
                 onClick={() => {
                   setMenu(!menu);
