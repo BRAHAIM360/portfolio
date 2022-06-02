@@ -74,7 +74,7 @@ function Footer() {
         </section>
         {t("Created By")}
         <a href="https://www.mahioussi.com"> {t("Mahioussi Brahim")}</a> |{" "}
-        <span className="far fa-copyright"></span> {t("2021 All rights")}
+        <span className="far fa-copyright"></span> {t("2020 All rights")}
       </span>
     </footer>
   );
