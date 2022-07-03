@@ -1,0 +1,51 @@
+@import 'static';
+@import 'layout';
+@import 'sideBar';
+
+@import 'animate.css';
+
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/fonts/helvetica-neu.ttf') format('tff') ;
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('../assets/fonts/LaBelleAurore.woff2') format('woff2') ;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../assets/fonts/CoolveticaRg-Regular.woff2') format('woff2') ;
+}
+
+input,
+textarea{
+  font-family:"Helvetica Neue" ;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  // padding: 0;
+  // margin: 0;
+  font-family: 300 11px/1.4 "Helvetica Neue",'sans-serif';
+  color: #444;
+  background:$second-color ;
+  overflow: hidden;
+  display: block;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
