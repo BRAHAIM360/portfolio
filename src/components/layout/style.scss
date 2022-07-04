@@ -1,0 +1,43 @@
+@import '../../utils/styles/static';
+
+.home-page{
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    
+    h1{
+        color:$white;
+        font-size: 53px;
+        margin: 0;
+        font-weight: 400;
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color:$primary-color;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left:15px;
+            opacity: 0.6;
+        }
+        &::after{
+            content:"</h1>" ;
+            font-family: 'La Belle Aurore';
+            color:$primary-color;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+        }
+
+        img{
+           width: 32px; 
+        }
+    }
+}
