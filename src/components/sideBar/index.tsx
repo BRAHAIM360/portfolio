@@ -33,7 +33,7 @@ export const SideBar: React.FC<SideBarProps> = ({ }) => {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color={colors.grey} />
                 </NavLink>
-                <NavLink activeclassname="active" className="work-link" to="/work">
+                <NavLink activeclassname="active" className="work-link" to="/resume">
                     <FontAwesomeIcon icon={faUserGear} color={colors.grey} />
                 </NavLink>
                 <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">

@@ -1,4 +1,4 @@
-// @import '../../utils/styles/static';
+@import '../../utils/styles/static';
 
 
 .stage-cube-cont {
@@ -36,6 +36,8 @@
     box-shadow: 0 0 20px 0px lightyellow;
   }
 
+ 
+
   .face1 {
     transform: translateZ(100px);
     color: #dd0031;
@@ -61,7 +63,31 @@
     color: #ec4d28;
   }
 }
+#button-container{
+  margin-left: 20px;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+#flat-button {
+  color:  $primary-color;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid $primary-color;
+  margin-top: 25px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
 
+  &:hover {
+    background: $primary-color;
+    color: #333;
+  }
+}
 @keyframes spincube {
   from,
   to {

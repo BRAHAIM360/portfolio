@@ -14,6 +14,7 @@ import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 import { AnimatedLetter } from '../AnimatedLetters'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -63,6 +64,11 @@ const About = () => {
             📋 Standards
             💠 Modular Design
           </p>
+          <div id='button-container'>
+            <Link to="/resume" id='flat-button' >MY RESUME</Link>
+            <Link to="/cv/cv.pdf" id='flat-button' >DOWNLOAD CV</Link>
+
+          </div>
         </div>
 
         <div className="stage-cube-cont">
