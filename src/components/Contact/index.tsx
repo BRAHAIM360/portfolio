@@ -61,9 +61,12 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
+            Get in Touch <br />
+            Feel free to ask me any questions using this form,you are welcom.
+
+            {/* I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            don't hesitate to contact me using below form either. */}
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -123,7 +126,7 @@ const Contact = () => {
           <MapContainer center={[35.696043347370434, -0.420099333755788]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[35.696043347370434, -0.420099333755788]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+              <Popup>Brahim lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>
