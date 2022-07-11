@@ -7,6 +7,7 @@
   animation-delay: 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
+  
 }
 
 .text-animate-hover {
@@ -25,3 +26,4 @@
     animation-delay: #{$i / 10}s;
   }
 }
+

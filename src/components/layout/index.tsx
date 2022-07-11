@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { SideBar } from '../sideBar';
 import './style.scss'
 
@@ -11,11 +12,10 @@ export const Layout: React.FC<LayoutProps> = ({ }) => {
         <div className="App">
             <SideBar />
             <div className="page">
-                <span className="top-tag-html">&lt;/html&gt;</span>
-
+                <span className="top-tag-html ">&lt;/html&gt;</span>
                 <span className="tags top-tags">&lt;body&gt;</span>
 
-                {/* <Outlet /> */}
+                <Outlet />
                 <span className="tags bottom-tags">
                     &lt;/body&gt;
                     <br />

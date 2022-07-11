@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './style.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faUserGear } from '@fortawesome/free-solid-svg-icons'
 
 import {
     faLinkedin,
@@ -32,6 +32,9 @@ export const SideBar: React.FC<SideBarProps> = ({ }) => {
                 </NavLink>
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color={colors.grey} />
+                </NavLink>
+                <NavLink activeclassname="active" className="work-link" to="/work">
+                    <FontAwesomeIcon icon={faUserGear} color={colors.grey} />
                 </NavLink>
                 <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
                     <FontAwesomeIcon icon={faSuitcase} color={colors.grey} />

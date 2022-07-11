@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.0.0",
     "animate.css": "^4.1.1",
     "gsap-trial": "^3.10.4",
+    "leaflet": "^1.8.0",
     "loaders.css": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
