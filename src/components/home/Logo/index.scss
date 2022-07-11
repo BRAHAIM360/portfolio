@@ -5,7 +5,7 @@
   z-index: 0;
   width: 400px;
   height: 609px;
-  opacity: 0;
+  // opacity: 0;
   position: absolute;
   top: 0;
   right: 15%;
@@ -13,12 +13,7 @@
   left: auto;
   margin: auto;
 
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(30deg) !important;
-  }
+  
 
   .solid-logo {
     position: absolute;
@@ -28,13 +23,19 @@
     left: 0;
     margin: auto;
     width: 100%;
-    opacity: 0;
+    animation: fadeIn 8s;
     transform: rotateZ(30deg) !important;
     z-index: 1;
   }
 }
 
-.svg-container {
-  stroke: $primary-color;
-  stroke-width: 10;
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+ 
+  100% { opacity: 1; }
 }
+// .svg-container {
+//   stroke: $primary-color;
+//   stroke-width: 10;
+// }
