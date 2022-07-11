@@ -66,7 +66,7 @@ const About = () => {
           </p>
           <div id='button-container'>
             <Link to="/resume" id='flat-button' >MY RESUME</Link>
-            <Link to="/cv/cv.pdf" id='flat-button' >DOWNLOAD CV</Link>
+            <Link to="/cv/cv.pdf" id='flat-button' target="_blank" rel="noopener noreferrer" >DOWNLOAD CV</Link>
 
           </div>
         </div>
