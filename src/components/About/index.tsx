@@ -36,22 +36,32 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+            Hello, my name is Brahim Mahioussi, and I'm a software developer and Javascript lover ,currently based in Oran, Algeria. I've worked hard in the IT field for the past 4 years,
+            first as a freelancer before getting my full time job, generating landing pages, websites, and mobile apps along the way.
           </p>
           {//@ts-ignore
           }
           <p
           // align="LEFT"
           >
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            My abundant energy allows me to pursue a variety of interests, hobbies,
+            and artistic endeavors. I am a quick learner who adjusts to change quickly and is willing to acquire new methods and procedures,
+            whether they are cultural or work-related.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            As a programmer, I like to think of myself as a Tech Agnostic Polyglot Programmer,
+            someone who can adapt, learn, and change based on their environment.
+          </p>
+          <p>
+            I'm usually focused on :
+            🎛️ Designing great User interfaces experience
+            🌐 Developing full-stack websites that scales
+            ✨ Developing backend and structuring databases.
+            ⏱️ Efficiency 🎯 Consistency
+            ♻️ Reusability
+            ⚙️ Systems
+            📋 Standards
+            💠 Modular Design
           </p>
         </div>
 

@@ -13,7 +13,7 @@ interface HomeProps {
 export const Home: React.FC<HomeProps> = ({ }) => {
     const [letterClass, setLetterClass] = useState("text-animate")
     const nameArray = ['r', 'a', 'h', 'i', 'm'];
-    const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+    const jobArray = ['S', 'o', 'f', 't ', 'w', 'a', 'r', 'e', '', 'e', 'n', 'g', 'i', 'n', 'e', 'e', 'r'];
     useEffect(() => {
 
         setTimeout(() => {
@@ -48,7 +48,7 @@ export const Home: React.FC<HomeProps> = ({ }) => {
                         <AnimatedLetter
                             letterClass={letterClass}
                             strArray={jobArray}
-                            idx={22} />
+                            idx={19} />
 
                     </h1>
                     <h2>
