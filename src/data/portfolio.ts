@@ -49,7 +49,7 @@ export const portfolio = [
   },
   {
     cover: "/images/event/0.jpg",
-    title: "Landing Page for Dalila International",
+    title: "Mobile App events-Tikets  StartUp Idea  ",
     description: "React nantive typescript ",
     url: "https://expo.dev/@brahim360/event-ticket",
   },
