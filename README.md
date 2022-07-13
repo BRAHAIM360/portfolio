@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# My Awessome Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Animated Portfolio
 
-## Available Scripts
+## 🚀 About Me
 
-In the project directory, you can run:
+I am Brahim, I am a Software Engineer. I've
+worked hard in the IT field for the past 3
+years, first as a freelancer before getting
+my full-time job, generating desktop apps
+landing pages, websites along the way.
 
-### `yarn start`
+![Logo](src/assets/images/logosss.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [https://portfolio.mahioussi.com/](https://portfolio.mahioussi.com/)
 
-### `yarn test`
+## Authors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [@Braim Mahioussi](https://github.com/BRAHAIM360)
 
-### `yarn build`
+<!-- ## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Animated
+- Live previews
+- Fullscreen mode
+- Cross platform -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the project
 
-### `yarn eject`
+```bash
+  git clone https://github.com/BRAHAIM360/portfolio.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Go to the project directory
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  cd my-project
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Install dependencies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  npm install
+```
 
-## Learn More
+Start the server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
+## Deployment
+
+To deploy this project on netlify folow this Link
+
+- [Deploying a React application to Netlify](https://circleci.com/blog/react-netlify-deploy/)
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+## Badges
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+## 🔗 Links
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://portfolio.mahioussi.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brahim-mahioussi-4b2920111/)
+
+## Acknowledgements
+
+- [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [Awesome README](https://github.com/matiassingers/awesome-readme)
+- [Special thanks to Slobodan Gajić](https://github.com/bobangajicsm)
