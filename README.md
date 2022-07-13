@@ -1,4 +1,4 @@
-# My Awessome Portfolio
+# My Awesome Portfolio
 
 React Animated Portfolio
 
