@@ -9,7 +9,8 @@
   margin-left: 0;
   position: absolute;
   right: 0;
-  overflow: hidden;
+  overflow: visible !important;
+  -webkit-transform-style: preserve-3d;
 
 }
 
@@ -21,6 +22,8 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+  // overflow: visible !important;
+  // -webkit-transform-style: preserve-3d;
 
   div {
     position: absolute;
@@ -38,29 +41,25 @@
 
  
 
-  .face1 {
-    transform: translateZ(100px);
-    color: #dd0031;
+  #face1 {
+    transform: translateZ(100px) ;
+    visibility: visible !important;
+    
   }
-  .face2 {
-    transform: rotateY(90deg) translateZ(100px);
-    color: #f06529;
+  #face2 {
+    transform: rotateY(90deg) translateZ(100px) ;
   }
-  .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    color: #28a4d9;
+  #face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px) ;
   }
-  .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    color: #5ed4f4;
+  #face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px) ;
   }
-  .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    color: #efd81d;
+  #face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(101px) ;
   }
-  .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
-    color: #ec4d28;
+  #face6 {
+    transform: rotateX(-90deg) translateZ(100px) ;
   }
 }
 #button-container{
