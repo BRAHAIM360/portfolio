@@ -28,7 +28,11 @@ const Resume = () => {
                     />
                 </h1>
                 <h1 className="div">
-                    Coming Soon
+                    <AnimatedLetter
+                        letterClass={letterClass}
+                        strArray={"Coming Soon".split("")}
+                        idx={15}
+                    />
 
                 </h1>
             </div>
