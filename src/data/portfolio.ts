@@ -1,7 +1,7 @@
 export const portfolio = [
   {
     cover: "/images/travel/0.png",
-    title: "Travel web site desing for Adventure",
+    title: "Travel web site Adventure agency",
     description: "React  SCSS  HTML Typescript",
     url: "http://travel.mahioussi.com",
   },
