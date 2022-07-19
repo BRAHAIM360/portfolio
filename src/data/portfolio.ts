@@ -27,7 +27,7 @@ export const portfolio = [
     cover: "/images/project3/imge2.JPG",
     title: "Kids Park Mangement",
     description: "C# Windows form Sql Server entity framework",
-    url: "https://github.com/BRAHAIM360",
+    url: "https://www.youtube.com/watch?v=5XzuOIIWj6s&t=1s&ab_channel=BRAHIMMAHIOUSSI",
   },
   {
     cover: "/images/project6/2.jpg",
@@ -43,7 +43,7 @@ export const portfolio = [
   },
   {
     cover: "/images/tryitApp/0.jpg",
-    title: "Travel web site desing for Adventure",
+    title: "Try It App this project was made for a client",
     description: "React native Typescript redux Firebase ",
     url: "https://expo.dev/@brahim360/TryIt",
   },
