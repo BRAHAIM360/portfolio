@@ -39,3 +39,16 @@
 //   stroke: $primary-color;
 //   stroke-width: 10;
 // }
+$breakpoint-tablet: 480px;
+
+
+@media (min-width: 600px) {
+  .solid-logo{
+    display:none;
+  }
+}
+// @media (max-width: $breakpoint-tablet) {
+//   .logo-container{
+//     display: none;
+//   }
+// }

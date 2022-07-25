@@ -83,3 +83,22 @@
 }
 
 
+
+
+@media (max-width: 600px) {
+  .solid-logo{
+    display:none;
+  }
+
+ .home-page  {
+   margin-left: 10%;
+   width: 185%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .resume{
+    display: none !important;
+   }
+ }
+ 
+ }

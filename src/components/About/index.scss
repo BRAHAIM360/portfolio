@@ -108,3 +108,20 @@
     transform: rotateX(90deg);
   }
 }
+
+@media (max-width: 600px) {
+  .stage-cube-cont{
+   display: none;
+ }
+ .about-page  {
+   margin-left: 10%;
+   width: 185%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   .resume{
+    display: none !important;
+   }
+ }
+ 
+ }

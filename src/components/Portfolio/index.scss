@@ -114,3 +114,28 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .images-container{
+    //    display: none;
+    flex-direction: column;
+    }
+
+    
+
+.portfolio-page .image-box {
+   max-width:none;
+   width: auto;
+   flex: none;
+   width: 100%;
+  
+
+}
+.portfolio-page {
+    
+    h1{
+        font-size: 45px !important;
+      }
+ }
+
+  }

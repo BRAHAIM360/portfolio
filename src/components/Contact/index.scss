@@ -118,3 +118,17 @@
     }
   }
 }
+
+
+@media (max-width: 600px) {
+ .map-wrap,.info-map{
+  display: none;
+}
+.contact-page {
+  margin-left: 10%;
+  width: 185%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
