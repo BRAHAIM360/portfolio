@@ -33,9 +33,9 @@ export const SideBar: React.FC<SideBarProps> = ({ }) => {
                 <NavLink activeclassname="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color={colors.grey} />
                 </NavLink>
-                <NavLink activeclassname="active" className="work-link" to="/resume">
+                {/* <NavLink activeclassname="active" className="work-link" to="/resume">
                     <FontAwesomeIcon icon={faUserGear} color={colors.grey} />
-                </NavLink>
+                </NavLink> */}
                 <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
                     <FontAwesomeIcon icon={faSuitcase} color={colors.grey} />
                 </NavLink>

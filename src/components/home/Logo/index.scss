@@ -42,7 +42,7 @@
 $breakpoint-tablet: 480px;
 
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .solid-logo{
     display:none;
   }

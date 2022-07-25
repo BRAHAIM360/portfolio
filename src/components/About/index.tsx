@@ -65,7 +65,7 @@ const About = () => {
             💠 Modular Design
           </p>
           <div id='button-container'>
-            <Link to="/resume" id='flat-button' >MY RESUME</Link>
+            {/* <Link to="/resume" id='flat-button' className='resume' >MY RESUME</Link> */}
             <Link to="/cv/Brahim Mahioussi.pdf" id='flat-button' target="_blank" rel="noopener noreferrer" >DOWNLOAD CV</Link>
 
           </div>

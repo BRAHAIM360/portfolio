@@ -119,8 +119,11 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   .resume{
-    display: none !important;
+   overflow: auto;
+   margin-bottom: 20px;
+  //  height: 120%;
+   #flat-button{
+    margin-bottom: 10%;
    }
  }
  
