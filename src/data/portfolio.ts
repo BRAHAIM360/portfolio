@@ -43,7 +43,7 @@ export const portfolio = [
   },
   {
     cover: "/images/tryitApp/0.jpg",
-    title: "Try It App this project was made for a client",
+    title: "Try It App Startup",
     description: "React native Typescript redux Firebase ",
     url: "https://expo.dev/@brahim360/TryIt",
   },
