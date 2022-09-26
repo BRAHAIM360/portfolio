@@ -4,8 +4,8 @@ React Animated Portfolio
 
 ## 🚀 About Me
 
-I am Brahim, I am a Software Engineer. I've
-worked hard in the IT field for the past 3
+I am Brahim, I am a Software Engineer. I have
+worked as software engineer past 3
 years, first as a freelancer before getting
 my full-time job, generating desktop apps
 landing pages, websites along the way.
