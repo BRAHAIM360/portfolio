@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import { portfolio } from "../../data/portfolio";
 import { AnimatedLetter } from "../AnimatedLetters";
 import "./index.scss";
 

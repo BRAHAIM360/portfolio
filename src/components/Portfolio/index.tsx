@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import { portfolio } from "../../data/portfolio";
+import portfolioData, { Iportfolio } from "../../data/portfolio";
 import { AnimatedLetter } from "../AnimatedLetters";
+import { Filter } from "./filter";
+import { motion } from 'framer-motion'
 import "./index.scss";
 
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    // const [portfolio, setPortfolio] = useState([]);
+    const [portfolio, setPortfolio] = useState(portfolioData);
+    const [categorie, setCategorie] = useState("all");
 
     useEffect(() => {
         setTimeout(() => {
@@ -25,10 +28,11 @@ const Portfolio = () => {
 
     const renderPortfolio = () => {
         return (
-            <div className="images-container">
+            <motion.div layout className="images-container">
+
                 {
-                    portfolio.map((port: any, idx: number) => {
-                        return (<div className="image-box" key={idx}>
+                    portfolio.map((port: Iportfolio, idx: number) => {
+                        return (<motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} className="image-box" key={port.title}>
                             <img
                                 src={port.cover}
                                 className="portfolio-image"
@@ -41,11 +45,11 @@ const Portfolio = () => {
                                     onClick={() => window.open(port.url)}
                                 >View</button>
                             </div>
-                        </div>
+                        </motion.div>
                         )
                     })
                 }
-            </div>
+            </motion.div>
         );
     }
 
@@ -60,6 +64,8 @@ const Portfolio = () => {
                         idx={15}
                     />
                 </h1>
+                <Filter categorie={categorie} setCategorie={setCategorie} setPortfolio={setPortfolio} />
+
                 <div>{renderPortfolio()}</div>
             </div>
             <Loader active type="pacman" />
