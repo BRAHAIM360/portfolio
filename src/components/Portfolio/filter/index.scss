@@ -1,0 +1,50 @@
+
+@import '../../../utils/styles/static';
+
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    div{
+        margin: 1.2rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: $primary-color;
+        // border-style: solid;
+        // border-color:black !important ;
+        border-radius: 0.7rem;
+        // border:34px;
+        // border-width: 0.5rem !important ;
+        // border-style: solid;
+        &:hover{
+            cursor: pointer;
+           color: $white; 
+            background-color: $primary-color;
+        }
+        
+    }
+    .active {
+        background-color: $primary-color;
+        color: $white; 
+    }
+}
+
+
+
+@media (max-width: 600px) {
+ 
+
+    
+    .filter{
+        div{
+            margin: 1.2rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border-style: solid;
+            // &:hover{
+            //     cursor: pointer;
+            //    color: $white; 
+            //     background-color: $primary-color;
+            // }
+        }}}

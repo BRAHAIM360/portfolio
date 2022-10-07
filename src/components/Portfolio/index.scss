@@ -10,7 +10,7 @@
     overflow: auto;
 
     h1.page-title {
-        margin-left: 100px;
+        margin-left: 10vw;
         margin-top: 100px;
     }
 
@@ -115,6 +115,35 @@
     }
 }
 
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    div{
+        margin: 1.2rem;
+        padding: 1rem;
+        font-size: 2rem;
+        color: $primary-color;
+        // border-style: solid;
+        // border-color:black !important ;
+        // border-radius: 20%;
+        // border:34px;
+        // border-width: 0.5rem !important ;
+        // border-style: solid;
+        &:hover{
+            cursor: pointer;
+           color: $white; 
+            background-color: $primary-color;
+        }
+        
+    }
+    .active {
+        background-color: $primary-color;
+        color: $white; 
+    }
+}
+
 @media (max-width: 600px) {
     .images-container{
     //    display: none;
@@ -122,7 +151,18 @@
     }
 
     
-
+    .filter{
+        div{
+            margin: 1.2rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border-style: solid;
+            // &:hover{
+            //     cursor: pointer;
+            //    color: $white; 
+            //     background-color: $primary-color;
+            // }
+        }}
 .portfolio-page .image-box {
    max-width:none;
    width: auto;
@@ -134,7 +174,7 @@
 .portfolio-page {
     
     h1{
-        font-size: 45px !important;
+        font-size: 4rem !important;
       }
  }
 
