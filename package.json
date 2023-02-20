@@ -26,6 +26,7 @@
     "react-loaders": "^3.0.1",
     "react-router-dom": "6.2.2",
     "react-scripts": "5.0.1",
+    "react-svg": "^16.1.2",
     "sass": "^1.53.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
