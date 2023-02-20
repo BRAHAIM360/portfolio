@@ -50,6 +50,15 @@ export const SideBar: React.FC<SideBarProps> = ({ }) => {
             <ul>
                 <li>
                     <a
+                        href="https://leetcode.com/brahim360/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img className='leetcodeIcon' src="/icons/leetcode.svg" alt="Leetcode" />
+                    </a>
+                </li>
+                <li>
+                    <a
                         href="https://www.linkedin.com/in/brahim-mahioussi-4b2920111/"
                         target="_blank"
                         rel="noreferrer"
