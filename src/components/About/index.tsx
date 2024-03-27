@@ -37,8 +37,9 @@ const About = () => {
             />
           </h1>
           <p>
-            Hello, my name is Brahim Mahioussi, and I'm a software developer and Javascript lover ,currently based in Oran, Algeria. I've worked hard in the IT field for the past 4 years,
-            first as a freelancer before getting my full time job, generating landing pages, websites, and mobile apps along the way.
+            Hello, my name is Brahim Mahioussi, and I'm a software developer,currently based in San Francisco.
+            a software engineer with a passion for creating efficient and effective applications.
+            I started my career as a freelancer before transitioning to a full-time system engineer and ultimately to a software engineer.
           </p>
           {//@ts-ignore
           }
