@@ -123,9 +123,9 @@ const Contact = () => {
           <span>contact@mahioussi.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[35.696043347370434, -0.420099333755788]} zoom={13}>
+          <MapContainer center={[37.65904181858885, -122.42449261439367]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[35.696043347370434, -0.420099333755788]}>
+            <Marker position={[37.65904181858885, -122.42449261439367]}>
               <Popup>Brahim lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
