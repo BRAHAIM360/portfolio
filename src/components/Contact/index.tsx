@@ -115,10 +115,10 @@ const Contact = () => {
         <div className="info-map">
           Brahim Mahioussi,
           <br />
-          Algeria,
+          California,
           <br />
-          Oran <br />
-          Benfreha <br />
+          San Francisco <br />
+          south San Francisco <br />
           <br />
           <span>contact@mahioussi.com</span>
         </div>
